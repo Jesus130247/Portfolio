@@ -10,7 +10,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
   [
       {
           name: 'Prepare for Battle',
-          image: '/warhammer.png',
+          image: 'public/warhammer.png',
           site: 'https://prepare4battle.onrender.com',
           description: `A website designed for the complex table top game; warhammer 40k. This website allows users to quickly, and efficiently 'prepare for battle'.
           It is a one stop shop for all the Rules they could need, as well as intuative UI to allow them to easily construct their army for game day. This website ultizes
@@ -30,7 +30,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       // },
     //   {
     //       name:'Leddit',
-    //       image:'/leddit.png',
+    //       image:'public/leddit.png',
     //       description:`A take on the popular site, reddit. This website was designed when I was learning backend NodeJS and SQL. 
     //       Thus, it heavily relies on these two components.`,
     //       gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
@@ -38,7 +38,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
     //   },
       {
           name:'Tic Tac Terminator', 
-          image:'/ticTacToe.png', 
+          image:'public/ticTacToe.png', 
           site:'https://pages.git.generalassemb.ly/leo-git-ga/Project-1/',
           description:'A fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
@@ -46,7 +46,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       },
       {
           name:'Calculator', 
-          image:'/calc.png', 
+          image:'public/calc.png', 
           site:'https://jesus130247.github.io/calc_backup/',
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',

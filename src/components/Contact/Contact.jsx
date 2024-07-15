@@ -63,9 +63,8 @@ const Contact = () => {
           required
           ></textarea>
         <button type="submit">Send Message</button>
-        <div>{status ? <div>{status}</div> : null}</div>
       </form> 
-      : null}
+      : <div>{status ? <div>{status}</div> : null}</div>}
     </section>
   );
 };
