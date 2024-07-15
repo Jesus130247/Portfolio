@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navBar {
+  background-color: rgba(0, 0, 0, 0.685);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  background-color: mistyrose;
+}
+
+#home {
+  padding-top: 60px;
+}
+#home h1 {
+  text-align: center;
+}
