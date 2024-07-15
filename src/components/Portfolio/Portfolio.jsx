@@ -61,7 +61,6 @@ export default function Portfolio({viewProjects,setViewProjects}) {
     } else if (slideNum < 0) {
       slideNum = (projects.length - 1)
     }
-    console.log(slideNum)
     setSlide(slideNum)
   }
   return (
