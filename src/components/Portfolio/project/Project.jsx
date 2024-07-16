@@ -3,6 +3,7 @@ import styles from '../Portfolio.module.css'
 
 export default function Project({name, image, description, site, backgroundColor}) {
     const [show, setShow] = useState(false)
+    
     return (
     <>
         <div 
