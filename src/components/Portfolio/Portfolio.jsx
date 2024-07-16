@@ -65,16 +65,14 @@ export default function Portfolio({viewProjects,setViewProjects}) {
   }
   return (
     <section id='portfolio'>
-    {viewProjects ? <button onClick={() => setViewProjects(!viewProjects)}>View Projects</button>:
     <div className={styles.grid}>
       <div onClick={() => handleClick(-1)} className={styles.navigate}>{'<'}</div>
       <div className={styles.body}>
         <Header />
-        <button onClick={() => setViewProjects(!viewProjects)}>Go back</button>
         <Dashboard slide={slide} projects={projects}/>
       </div>
       <div onClick={() => handleClick(1)} className={styles.navigate}>{'>'}</div>
-    </div>} 
+    </div>
     </section>
   )
 }

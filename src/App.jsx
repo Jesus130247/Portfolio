@@ -14,8 +14,8 @@ function App() {
       <Navbar setViewProjects={setViewProjects}/>
       <Home />
       <About />
-      <Contact />
       <Portfolio viewProjects={viewProjects} setViewProjects={setViewProjects}/>
+      <Contact />
   </div>
   )
 }

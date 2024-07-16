@@ -1,6 +1,11 @@
+/* * {
+  margin: 0 auto;
+} */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  margin: 0 auto;
 }
 
 nav {
@@ -26,9 +31,12 @@ nav a {
 }
 
 section {
-  padding: 20px;
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
   border: 1px solid #ccc;
+  height: 54rem;
 }
 
 form {
@@ -64,8 +72,71 @@ body {
 }
 
 #home {
-  padding-top: 60px;
+  color: white;
+  background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg');
 }
+
 #home h1 {
-  text-align: center;
+  margin-left: 40%;
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+
+
+#contact p {
+  margin: 0 0 0 50px;
+  width: 60%;
+  font-size: 1.15rem;
+}
+
+#about {
+  color: white;
+  background-position: center;
+  background-image: url('https://images8.alphacoders.com/134/1347727.png');
+}
+#about p {
+  margin: 0 5%;
+}
+
+#about button, h2 {
+  margin: 30px auto;
+}
+#contact input {
+  width: 30rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.shown {
+  visibility: visible;
+}
+
+#portfolio {
+  background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg');
+  padding: 0;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg');
+  color: white;
+}
+
+#contact div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .sectionTwo {
+  margin: 0 auto;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 1.25rem;
 }
