@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import styles from '../Portfolio.module.css'
+import warhammer from '../../../assets/images/warhammer.png'
+import calc from '../../../assets/images/calc.png'
+import tic from '../../../assets/images/ticTacToe.png'
 
 export default function Project({name, image, description, site, backgroundColor}) {
     const [show, setShow] = useState(false)
-    
     return (
     <>
         <div 
