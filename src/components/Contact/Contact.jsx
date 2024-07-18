@@ -4,12 +4,10 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [sendMessage, setSendMessage] = useState(false)
   const [status, setStatus] = useState(null)
   let secrets = import.meta.env
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Message ${message}, sent by ${name}`);
     const templateParams = {
       name,
       email,
@@ -30,12 +28,22 @@ const Contact = () => {
       console.error('Failed to send message:', err);
       setStatus('Failed to send message. Please try again later.');
     });
+    alert(status);
   };
 
   return (
     <section id="contact">
       <div className="sectionOne">
-      <p>
+      <h2>Contact</h2>
+      <p>If you would like to work together, or just feel like saying hello, feel free to contact me on my socials below. Or DM using the form to the right.</p>
+      <br /><p>I will do my best to always respond within the hour</p>
+    <ul>
+      <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'>📍 Melbourne</a></li>
+      <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'>✉️ Leonardo.monty@hotmail.com</a></li>
+      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img src="/Portfolio/assets/calc-DAvLp7Th.png" alt="" />LinkedIn/LeonardoManteit</a></li>
+      <li><a target='_blank' href='https://www.instagram.com/leonardomonty/'>github/Jesus130247</a></li>
+    </ul>
+      {/* <p>
         Are you ready to elevate your projects with cutting-edge 
         software solutions? 
       </p>
@@ -57,18 +65,9 @@ const Contact = () => {
           <span style={{fontWeight: 700}}>Collaboration and Support:</span> I prioritize open communication and collaboration, 
           working closely with your team to align on goals and deliver results.
           </li>
-      </p>
+      </p> */}
       </div>
       <div className="sectionTwo">
-      <h2>Contacts</h2>
-      <h3>Feel free to reach out on my socials</h3>
-    <ul>
-      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'>LinkedIn</a></li>
-      <li><a target='_blank' href='https://www.instagram.com/leonardomonty/'>Instagram</a></li>
-    </ul>
-      <h3>Or if youd prefer, send me an email below.</h3>
-      <button onClick={() => setSendMessage(!sendMessage)}>DM me now</button>
-      {sendMessage ? 
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -91,9 +90,7 @@ const Contact = () => {
           required
           ></textarea>
         <button type="submit">Send Message</button>
-      </form> 
-      : <div>{status ? <div>{status}</div> : null}</div>}
-      <h3>I will do my best to always respond within the hour</h3>
+      </form>
       </div>
     </section>
   );

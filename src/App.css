@@ -57,6 +57,11 @@ button {
   border: none;
   cursor: pointer;
 }
+button:hover {
+  background: #6b6b6b;
+  transition: 0.5s;
+
+}
 
 .navBar {
   background-color: rgba(0, 0, 0, 0.685);
@@ -65,21 +70,38 @@ button {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1100;
 }
 
 body {
-  background-color: mistyrose;
+  background-color: rgb(30, 32, 34);
 }
 
 #home {
+  display: grid;
   color: white;
-  background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg');
+  /* background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg'); */
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 
 #home h1 {
-  margin-left: 40%;
+  margin: 0;
   font-size: 5rem;
-  margin-bottom: 50px;
+}
+#home p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+#home #image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home img {
+  margin: 0 auto;
+  border-radius: 1000px;
 }
 
 
@@ -90,16 +112,27 @@ body {
 }
 
 #about {
+  display: flex;
   color: white;
-  background-position: center;
-  background-image: url('https://images8.alphacoders.com/134/1347727.png');
+  align-items: center;
+  /* background-position: center; */
+  /* background-image: url('https://images8.alphacoders.com/134/1347727.png'); */
 }
-#about p {
+#about div p {
   margin: 0 5%;
 }
-
-#about button, h2 {
+#about h2, button {
   margin: 30px auto;
+  text-align: center;
+}
+#about button {
+  margin: 30px 45%;
+  text-align: center;
+}
+.about-content {
+  background-color: rgb(46, 56, 66);
+  border-radius: 25px;
+  width: 80%;
 }
 #contact input {
   width: 30rem;
@@ -107,20 +140,35 @@ body {
 
 .hidden {
   visibility: hidden;
+  list-style: none;
+  background-color: rgba(38, 44, 51, 0);
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  width: 100%;
+  border-radius: 50px;
 }
 .shown {
   visibility: visible;
+  background-color: rgb(38, 44, 51);
+  padding: 25px 0;
+  list-style: none;
+  border-radius: 25px;
+  width: 80%;
+  transition: 0.5s;
+}
+.shown li {
+  margin: 0 5%;
 }
 
 #portfolio {
-  background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg');
+  /* background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg'); */
   padding: 0;
 }
 
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg');
+  /* background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg'); */
   color: white;
 }
 
@@ -130,8 +178,47 @@ body {
   justify-content: center;
 }
 
+#contact .sectionOne {
+  display: flex;
+  background-color: rgb(46, 56, 66);
+  border-radius: 25px;
+  width: 80%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+}
+
 #contact .sectionTwo {
   margin: 0 auto;
+  display: flex;
+  background-color: rgb(46, 56, 66);
+  border-radius: 25px;
+  width: 80%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+}
+.sectionOne h2 {
+  text-align: center;
+  font-size: 1.85rem;
+}
+.sectionOne li {
+  list-style: none;
+}
+#contact form {
+  display: flex;
+  align-items: center;
+}
+#contact form textarea {
+  width: 70%;
+  border-radius: 25px;
+  height: 4rem;
+  padding: 15px 20px;
+}
+#contact form input {
+  width: 70%;
+  border-radius: 25px;
+  padding: 15px 20px;
 }
 
 #contact a {

@@ -10,6 +10,7 @@ const About = () => {
   }
   return (
     <section id="about">
+      <div className="about-content">
       <h2>About Me</h2>
       <p>My name is Leonardo Manteit, I am a software engineer specializing in web development. I live in Melbourne, Australia and love to stay active and see friends.</p>
       <p>I am always working on a new project (which you can check out in my <Link to="portfolio" smooth={true} duration={500} style={{fontWeight: 700, cursor: 'pointer'}}>Portfolio</Link>).</p>
@@ -23,6 +24,7 @@ const About = () => {
       </p>
       <p>It is my goal to continue to improve my skills, and help others at the same time.</p>
       <button onClick={handleCick}>My Qualifications</button>
+      </div>
       <p className={quals}>
         <li>Bachelor Degree in Applied Science (Physics) from RMIT </li>
         <li>Certificate of Completion in Software Engineering from General Assembly (420 hours)</li>
