@@ -190,12 +190,12 @@ body {
 .sectionOne h2 {
   text-align: center;
   font-size: 1.85rem;
+  margin-top: 0;
 }
-.sectionOne ul {
+.sectionOne p {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 .sectionOne p {
   width: 80%;
