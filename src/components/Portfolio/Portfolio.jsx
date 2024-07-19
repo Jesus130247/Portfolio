@@ -28,14 +28,14 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       //     gitLink:'https://github.com/Jesus130247/Melb-petrol-app',
       //     backgroundColor:'black'
       // },
-    //   {
-    //       name:'Leddit',
-    //       image:'/leddit.png',
-    //       description:`A take on the popular site, reddit. This website was designed when I was learning backend NodeJS and SQL. 
-    //       Thus, it heavily relies on these two components.`,
-    //       gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
-    //       backgroundColor:'#d4d4d4'
-    //   },
+      {
+          name:'Leddit',
+          image:'/leddit.png',
+          description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
+          users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
+          gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
+          backgroundColor:'#d4d4d4'
+      },
       {
           name:'Tic Tac Terminator', 
           image:'/Portfolio/assets/ticTacToe-CkRANuQ1.png', 

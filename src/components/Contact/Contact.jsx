@@ -37,11 +37,12 @@ const Contact = () => {
       <h2>Contact</h2>
       <p>If you would like to work together, or just feel like saying hello, feel free to contact me on my socials below. Or DM using the form to the right.</p>
       <br /><p>I will do my best to always respond within the hour</p>
+      <br />
     <ul>
       <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'>📍 Melbourne</a></li>
       <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'>✉️ Leonardo.monty@hotmail.com</a></li>
-      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img src="/Portfolio/assets/social-linkedin.svg" alt="" />LinkedIn/LeonardoManteit</a></li>
-      <li><a target='_blank' href='https://www.instagram.com/leonardomonty/'>github/Jesus130247</a></li>
+      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img href="/Portfolio/assets/social-linkedin.svg" alt="linked in logo" />LinkedIn/LeonardoManteit</a></li>
+      <li><a target='_blank' href='https://github.com/Jesus130247'><img href="/Portfolio/assets/Github.svg" alt="github Logo" />github/Jesus130247</a></li>
     </ul>
       {/* <p>
         Are you ready to elevate your projects with cutting-edge 

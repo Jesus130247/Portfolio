@@ -35,8 +35,8 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-  border: 1px solid #ccc;
-  height: 54rem;
+  /* border: 1px solid #ccc; */
+  height: 60em;
 }
 
 form {
@@ -104,13 +104,6 @@ body {
   border-radius: 1000px;
 }
 
-
-#contact p {
-  margin: 0 0 0 50px;
-  width: 60%;
-  font-size: 1.15rem;
-}
-
 #about {
   display: flex;
   color: white;
@@ -134,10 +127,6 @@ body {
   border-radius: 25px;
   width: 80%;
 }
-#contact input {
-  width: 30rem;
-}
-
 .hidden {
   visibility: hidden;
   list-style: none;
@@ -172,10 +161,15 @@ body {
   color: white;
 }
 
-#contact div {
+
+#contact input {
+  width: 30rem;
+}
+#contact .sectionOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #contact .sectionOne {
@@ -188,7 +182,26 @@ body {
   align-self: center;
 }
 
+.sectionOne h2 {
+  text-align: center;
+  font-size: 1.85rem;
+}
+.sectionOne ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.sectionOne p {
+  width: 80%;
+  padding: 0;
+  font-size: 1.15rem;
+  margin: 0;
+}
 #contact .sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   display: flex;
   background-color: rgb(46, 56, 66);
@@ -197,13 +210,6 @@ body {
   height: 60%;
   justify-self: center;
   align-self: center;
-}
-.sectionOne h2 {
-  text-align: center;
-  font-size: 1.85rem;
-}
-.sectionOne li {
-  list-style: none;
 }
 #contact form {
   display: flex;
