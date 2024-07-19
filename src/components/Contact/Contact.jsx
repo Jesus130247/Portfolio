@@ -39,7 +39,7 @@ const Contact = () => {
       <div className="sectionOne">
       <h2>Contact</h2>
       <p>If you would like to work together, or just feel like saying hello, feel free to contact me on my socials below. Or DM using the form to the right.</p>
-      <br /><p>I will do my best to always respond within the hour</p>
+      <br /><p>I will always do my best to respond within the hour</p>
       <br />
     <p>
       <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'>📍 Melbourne</a></li>

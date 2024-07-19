@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact';
 import './App.css';
 import Portfolio from './components/Portfolio/Portfolio'
 import { useState } from 'react';
+import Footer from './components/footer/footer';
 
 function App() {
   const [viewProjects, setViewProjects] = useState(true)
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Portfolio viewProjects={viewProjects} setViewProjects={setViewProjects}/>
       <Contact />
+      <Footer />
   </div>
   )
 }

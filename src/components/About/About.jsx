@@ -23,8 +23,8 @@ const About = () => {
         <br />I believe in maintaining a constant stream of communication with my client in order to acheive the best results.
       </p>
       <p>It is my goal to continue to improve my skills, and help others at the same time.</p>
-      <button onClick={handleCick}>My Qualifications</button>
       </div>
+      <button onClick={handleCick}>My Qualifications</button>
       <p className={quals}>
         <li>Bachelor Degree in Applied Science (Physics) from RMIT </li>
         <li>Certificate of Completion in Software Engineering from General Assembly (420 hours)</li>
