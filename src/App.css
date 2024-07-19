@@ -85,6 +85,11 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+#home .content button a {
+  text-decoration: none;
+  color: white;
+}
+
 #home h1 {
   margin: 0;
   font-size: 5rem;

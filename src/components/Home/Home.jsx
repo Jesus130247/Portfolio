@@ -1,5 +1,5 @@
 import React from 'react';
-
+import portfolio from '../../assets/portfolio.pdf'
 const Home = () => {
   return (
     <section id="home">
@@ -10,7 +10,7 @@ const Home = () => {
         <h1>Leonardo Manteit</h1>
         <p>Software Developer</p>
         <br />
-        <button>Check out my Resume</button>
+        <button><a target='_blank' href={portfolio}>Check out my Resume</a></button>
       </div>
     </section>
   );

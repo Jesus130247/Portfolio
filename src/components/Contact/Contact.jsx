@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import linkedIn from '../../assets/images/social-linkedin.svg'
+import github from '../../assets/images/Github.svg'
+
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -41,8 +44,8 @@ const Contact = () => {
     <ul>
       <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'>📍 Melbourne</a></li>
       <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'>✉️ Leonardo.monty@hotmail.com</a></li>
-      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img href="/Portfolio/assets/social-linkedin.svg" alt="linked in logo" />LinkedIn/LeonardoManteit</a></li>
-      <li><a target='_blank' href='https://github.com/Jesus130247'><img href="/Portfolio/assets/Github.svg" alt="github Logo" />github/Jesus130247</a></li>
+      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><div styles={{backgroundImage: `url('${linkedIn}')`, height: '40px', width: '40px'}}  />LinkedIn/LeonardoManteit</a></li>
+      <li><a target='_blank' href='https://github.com/Jesus130247'><div styles={{backgroundImage: `url('${github}')`, height: '40px', width: '40px'}}  />github/Jesus130247</a></li>
     </ul>
       {/* <p>
         Are you ready to elevate your projects with cutting-edge 
