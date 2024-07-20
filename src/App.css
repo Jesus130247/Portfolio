@@ -95,7 +95,7 @@ body {
   background-color: rgb(30, 32, 34);
 }
 
-#home {
+.homeDiv {
   display: grid;
   color: white;
   /* background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg'); */
@@ -103,28 +103,30 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-#home .content button a {
+.homeDiv .content button a {
   text-decoration: none;
   color: white;
 }
 
-#home h1 {
+.homeDiv h1 {
   margin: 0;
   font-size: 5rem;
 }
-#home p {
+.homeDiv p {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
 }
-#home #image {
+.homeDiv #image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#home img {
+.homeDiv img {
   margin: 0 auto;
-  border-radius: 1000px;
+  border-radius: 400px;
+  height: 500px;
+  max-width: 500px;
 }
 
 #about {
@@ -149,6 +151,7 @@ body {
   border-radius: 25px;
   width: 80%;
   padding-bottom: 30px;
+  margin-top: 16px;
 }
 .hidden {
   visibility: hidden;
@@ -156,6 +159,7 @@ body {
   color: rgba(255, 255, 255, 0);
   transition: 0.5s;
   width: 100%;
+  font-size: 0rem;
   border-radius: 50px;
   list-style: none;
 }
@@ -174,35 +178,42 @@ body {
 
 #portfolio {
   /* background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg'); */
-  padding: 0;
+  /* padding: 60px 0 0 0; */
 }
 
-#contact {
+.contactDiv {
   display: grid;
+  height: 60%;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   /* background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg'); */
   color: white;
 }
 
 
-#contact input {
+.contactDiv input {
   width: 30rem;
 }
-#contact .sectionOne {
+.contactDiv .sectionOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#contact .sectionOne {
+.contactDiv .sectionOne {
   display: flex;
   background-color: rgb(46, 56, 66);
   border-radius: 25px;
   width: 80%;
-  height: 60%;
+  height: 100%;
   justify-self: center;
   align-self: center;
+}
+.sectionOne img {
+  position: relative;
+  top: 0.5rem;
+  height: 2rem;
 }
 
 .sectionOne h2 {
@@ -221,7 +232,7 @@ body {
   font-size: 1.15rem;
   margin: 0;
 }
-#contact .sectionTwo {
+.contactDiv .sectionTwo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,33 +241,32 @@ body {
   background-color: rgb(46, 56, 66);
   border-radius: 25px;
   width: 80%;
-  height: 60%;
+  height: 100%;
   justify-self: center;
   align-self: center;
 }
 
-#contact form textarea {
+.contactDiv form textarea {
   align-self: center;
   width: 70%;
   border-radius: 25px;
   height: 4rem;
   padding: 15px 20px;
 }
-#contact form input {
+.contactDiv form input {
   align-self: center;
   width: 70%;
   border-radius: 25px;
   padding: 15px 20px;
 }
-#contact form button {
+.contactDiv form button {
   align-self: end;
   margin-right: 12%;
 }
-#contact a {
+.contactDiv a {
   text-decoration: none;
   color: white;
   font-weight: 800;
-  font-size: 1.25rem;
 }
 
 footer {
@@ -264,4 +274,19 @@ footer {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.685);
+}
+
+.navUp, .navDown {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 1000px;
+}
+.navUp img, .navDown img {
+  height: 3rem;
+}
+.navUp a, .navDown a {
+  display: flex;
 }

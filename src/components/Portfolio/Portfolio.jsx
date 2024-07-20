@@ -2,6 +2,8 @@ import Header from './header/header'
 import Dashboard from './dashboard/dashboard'
 import { useState } from 'react'
 import styles from './Portfolio.module.css'
+import NavUp from '../navUp/NavUp'
+import NavDown from '../navDown/NavDown'
 
 export default function Portfolio({viewProjects,setViewProjects}) {
   const [slide, setSlide] = useState(0)
@@ -65,6 +67,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
   }
   return (
     <section id='portfolio'>
+      <NavUp location={'about'} />
     <div className={styles.grid}>
       <div onClick={() => handleClick(-1)} className={styles.navigate}>{'<'}</div>
       <div className={styles.body}>
@@ -73,6 +76,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       </div>
       <div onClick={() => handleClick(1)} className={styles.navigate}>{'>'}</div>
     </div>
+      <NavDown location={'contact'} />
     </section>
   )
 }

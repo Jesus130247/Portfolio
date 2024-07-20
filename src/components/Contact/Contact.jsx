@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import linkedIn from '../../assets/images/social-linkedin.svg'
-import github from '../../assets/images/Github.svg'
+import locationImg from '../../assets/images/map.png'
+import emailImg from '../../assets/images/gmail.png'
+import linkedIn from '../../assets/images/linkedin.png'
+import github from '../../assets/images/Github.png'
+import NavUp from '../navUp/NavUp';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -34,24 +37,26 @@ const Contact = () => {
     alert(status);
   };
 
-  return (
+  return (<>
     <section id="contact">
-      <div className="sectionOne">
-      <h2>Contact</h2>
-      <p>If you would like to work together, or just feel like saying hello, feel free to contact me on my socials below. Or DM using the form to the right.</p>
-      <br /><p>I will always do my best to respond within the hour</p>
-      <br />
-    <p>
-      <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'>📍 Melbourne</a></li>
-      <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'>✉️ Leonardo.monty@hotmail.com</a></li>
-      <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><div styles={{backgroundImage: `url('${linkedIn}')`, height: '40px', width: '40px'}}  />LinkedIn/LeonardoManteit</a></li>
-      <li><a target='_blank' href='https://github.com/Jesus130247'><div styles={{backgroundImage: `url('${github}')`, height: '40px', width: '40px'}}  />github/Jesus130247</a></li>
-    </p>
-      {/* <p>
-        Are you ready to elevate your projects with cutting-edge 
-        software solutions? 
+      <NavUp location={'portfolio'} />
+      <div className="contactDiv">
+        <div className="sectionOne">
+        <h2>Contact</h2>
+        <p>If you'd like to work together or just want to say hello, feel free to contact me via my social media handles below. You can also email me using the form to the right.</p>
+        <br /><p>I will always do my best to respond within the hour</p>
+        <br />
+      <p>
+        <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'><img src={locationImg} alt="location pin" /> Melbourne, AUS</a></li>
+        <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'><img src={emailImg} alt="email logo" /> Leonardo.monty@hotmail.com</a></li>
+        <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><div /><img src={linkedIn} alt="linkedIn" /> LinkedIn/LeonardoManteit</a></li>
+        <li><a target='_blank' href='https://github.com/Jesus130247'><div /><img src={github} alt="github" /> github/Jesus130247</a></li>
       </p>
-      <p><span style={{fontWeight: 700}}>What I offer:</span>
+        {/* <p>
+          Are you ready to elevate your projects with cutting-edge 
+          software solutions? 
+          </p>
+          <p><span style={{fontWeight: 700}}>What I offer:</span>
           <li>
           <span style={{fontWeight: 700}}>Custom Software Development:</span> Whether you need a web app, 
           mobile solution, or backend system, I create user-friendly and 
@@ -69,34 +74,36 @@ const Contact = () => {
           <span style={{fontWeight: 700}}>Collaboration and Support:</span> I prioritize open communication and collaboration, 
           working closely with your team to align on goals and deliver results.
           </li>
-      </p> */}
-      </div>
-      <div className="sectionTwo">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-          />
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          />
-        <textarea
-          placeholder="Your Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-          ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        </p> */}
+        </div>
+        <div className="sectionTwo">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            />
+          <input
+            type="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            />
+          <textarea
+            placeholder="Your Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+            ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        </div>
       </div>
     </section>
+          </>
   );
 };
 
