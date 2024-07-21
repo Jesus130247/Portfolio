@@ -1,11 +1,8 @@
-/* * {
-  margin: 0 auto;
-} */
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
 }
 
 nav {
@@ -57,6 +54,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 15px 20px;
+  font-family: "LeagueSpartan";
   border-radius: 5px;
 }
 button:hover {
@@ -66,6 +64,7 @@ button:hover {
 }
 
 .navBar {
+  font-family: "LeagueSpartan";
   display: flex;
   background-color: rgba(0, 0, 0, 0.685);
   position: fixed;
@@ -111,6 +110,7 @@ body {
 .homeDiv h1 {
   margin: 0;
   font-size: 5rem;
+  font-family: "LeagueSpartan";
 }
 .homeDiv p {
   margin: 0;
@@ -142,6 +142,7 @@ body {
 #about h2 {
   margin: 30px auto;
   text-align: center;
+  font-family: "LeagueSpartan";
 }
 #about button {
   margin: 30px auto;
@@ -220,6 +221,7 @@ body {
   text-align: center;
   font-size: 1.85rem;
   margin-top: 0;
+  font-family: "LeagueSpartan";
 }
 .sectionOne p {
   list-style: none;
@@ -266,14 +268,20 @@ body {
 .contactDiv a {
   text-decoration: none;
   color: white;
-  font-weight: 800;
+  font-family: "LeagueSpartan";
 }
 
 footer {
+  display: flex;
   width: 100%;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.685);
+  display: flex;
+  padding: 0.5rem 0;
 }
 
 .navUp, .navDown {
@@ -281,9 +289,16 @@ footer {
   align-self: center;
   justify-self: center;
   width: fit-content;
-  padding: 10px;
   border-radius: 1000px;
+  background-color: rgb(173, 173, 173);
+  transition: .5s;
 }
+
+.navUp:hover, .navDown:hover {
+  background: #6d2f2fb4;
+  transition: .5s;
+}
+
 .navUp img, .navDown img {
   height: 3rem;
 }

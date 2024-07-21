@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "LeagueSpartan";
+    src: local("LeagueSpartan"), url('./fonts/LeagueSpartan.otf') format("opentype");
+    font-weight: normal;
+}

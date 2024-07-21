@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import upArrow from '../../assets/images/up-arrow.png'
+import upArrow from '../../assets/images/up-arrow2.png'
 
 export default function NavUp({location}) {
     return (

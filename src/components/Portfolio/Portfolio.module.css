@@ -30,7 +30,7 @@ html {
     /* background-size: cover; */
     position: relative;
     margin: 20px 0 0 0;
-    border-radius: 12px;
+    border-radius: 18px;
     overflow-y: hidden;
     transition: 0.5s;
 }

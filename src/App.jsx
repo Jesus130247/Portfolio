@@ -7,6 +7,7 @@ import './App.css';
 import Portfolio from './components/Portfolio/Portfolio'
 import { useState } from 'react';
 import Footer from './components/footer/footer';
+import "./index.css"
 
 function App() {
   const [viewProjects, setViewProjects] = useState(true)

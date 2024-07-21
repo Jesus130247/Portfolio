@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import downArrow from '../../assets/images/down-arrow.png'
+import downArrow from '../../assets/images/drop-down.png'
 
 export default function NavDown({location}) {
     return (
