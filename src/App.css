@@ -11,7 +11,7 @@
 }
 
 #light-mode {
-  --clr-nav: rgba(131, 47, 233, 0.575);
+  --clr-nav: rgba(131, 47, 233, 0.678);
   --clr-text: black;
   background-color: rgb(236, 236, 236);
   --about-clr: rgba(70, 162, 255, 0.541);
@@ -297,7 +297,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: var(--clr-text);
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: var(--clr-nav);
   display: flex;
   padding: 0.5rem 0;
 }
