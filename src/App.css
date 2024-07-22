@@ -1,3 +1,23 @@
+* {
+  transition: 0.1s;
+}
+
+#dark-mode {
+  --clr-nav: rgba(0, 0, 0, 0.685);
+  --clr-text: white;
+  background-color: rgb(30, 32, 34);
+  --about-clr: rgb(46, 56, 66);
+  --button-clr: #6d2f2fb4;
+}
+
+#light-mode {
+  --clr-nav: rgba(131, 47, 233, 0.575);
+  --clr-text: black;
+  background-color: rgb(236, 236, 236);
+  --about-clr: rgba(70, 162, 255, 0.541);
+  --button-clr: rgba(227, 47, 233, 0.575);
+}
+
 
 body {
   line-height: 1.6;
@@ -6,8 +26,7 @@ body {
 }
 
 nav {
-  background: #333;
-  color: #fff;
+  color: var(--clr-text);
   padding: 10px;
 }
 
@@ -23,7 +42,7 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color: var(--clr-text);
   text-decoration: none;
 }
 
@@ -49,8 +68,8 @@ form textarea {
 
 button {
   padding: 10px;
-  background: #6d2f2fb4;
-  color: white;
+  background: var(--button-clr);
+  color: var(--clr-text);
   border: none;
   cursor: pointer;
   padding: 15px 20px;
@@ -66,7 +85,7 @@ button:hover {
 .navBar {
   font-family: "LeagueSpartan";
   display: flex;
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: var(--clr-nav);
   position: fixed;
   top: 0;
   left: 0;
@@ -86,17 +105,15 @@ button:hover {
 }
 .navBar .systemChange {
   padding-right: 10px;
+  cursor: pointer;
 }
-
-
-
-body {
-  background-color: rgb(30, 32, 34);
+.navBar img {
+  margin-top: 10%;
+  height: 3rem;
 }
-
 .homeDiv {
   display: grid;
-  color: white;
+  color: var(--clr-text);
   /* background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg'); */
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -104,7 +121,7 @@ body {
 
 .homeDiv .content button a {
   text-decoration: none;
-  color: white;
+  color: var(--clr-text);
 }
 
 .homeDiv h1 {
@@ -131,7 +148,7 @@ body {
 
 #about {
   display: flex;
-  color: white;
+  color: var(--clr-text);
   align-items: center;
   /* background-position: center; */
   /* background-image: url('https://images8.alphacoders.com/134/1347727.png'); */
@@ -149,7 +166,7 @@ body {
   margin: 30px auto;
 }
 .about-content {
-  background-color: rgb(46, 56, 66);
+  background-color: var(--about-clr);
   border-radius: 25px;
   width: 80%;
   padding-bottom: 30px;
@@ -167,7 +184,7 @@ body {
 }
 .shown {
   visibility: visible;
-  background-color: rgb(38, 44, 51);
+  background-color: var(--about-clr);
   padding: 25px 0;
   list-style: none;
   border-radius: 25px;
@@ -189,7 +206,7 @@ body {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   /* background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg'); */
-  color: white;
+  color: var(--clr-text);
 }
 
 
@@ -205,7 +222,7 @@ body {
 
 .contactDiv .sectionOne {
   display: flex;
-  background-color: rgb(46, 56, 66);
+  background-color: var(--about-clr);
   border-radius: 25px;
   width: 80%;
   height: 100%;
@@ -241,7 +258,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   display: flex;
-  background-color: rgb(46, 56, 66);
+  background-color: var(--about-clr);
   border-radius: 25px;
   width: 80%;
   height: 100%;
@@ -268,7 +285,7 @@ body {
 }
 .contactDiv a {
   text-decoration: none;
-  color: white;
+  color: var(--clr-text);
   font-family: "LeagueSpartan";
 }
 
@@ -279,7 +296,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--clr-text);
   background-color: rgba(0, 0, 0, 0.685);
   display: flex;
   padding: 0.5rem 0;

@@ -87,11 +87,11 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           {projects.map((project,idx) => {
             if (idx === navO) {
               return (
-                <span style={{backgroundColor: 'white'}} key={idx} onClick={() => handleNav(idx)}>O</span>
+                <span key={idx} onClick={() => handleNav(idx)}>O</span>
               )
             } else {
               return (
-               <span key={idx} onClick={() => handleNav(idx)}>O</span>
+               <span style={{backgroundColor: 'transparent'}} key={idx} onClick={() => handleNav(idx)}>O</span>
               )
             }
           })}

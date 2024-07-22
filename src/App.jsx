@@ -9,17 +9,23 @@ import { useState } from 'react';
 import Footer from './components/footer/footer';
 import "./index.css"
 
+import { createContext } from 'react';
+export const ThemeContext = createContext(null)
+
 function App() {
+  const [theme, setTheme] = useState('dark-mode')
   const [viewProjects, setViewProjects] = useState(true)
   return (
-    <div>
-      <Navbar setViewProjects={setViewProjects}/>
-      <Home />
-      <About />
-      <Portfolio viewProjects={viewProjects} setViewProjects={setViewProjects}/>
-      <Contact />
-      <Footer />
-  </div>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+      <div className='app' id={theme}>
+        <Navbar setViewProjects={setViewProjects} setTheme={setTheme} theme={theme}/>
+        <Home />
+        <About />
+        <Portfolio viewProjects={viewProjects} setViewProjects={setViewProjects}/>
+        <Contact />
+        <Footer />
+    </div>
+    </ThemeContext.Provider>
   )
 }
 

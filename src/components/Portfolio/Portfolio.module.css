@@ -18,7 +18,7 @@ html {
 }
 .title {
     text-align: center;
-    color: white;
+    color: var(--clr-text);
 }
 
 
@@ -79,7 +79,7 @@ small {
   padding: 5px 10px;
   border-radius: 15px;
   border: 0px;
-  color: white;
+  color: var(--clr-text);
   cursor: pointer;
 }
 
@@ -118,7 +118,7 @@ small {
 
 .navigate {
   display: flex;
-  color: white;
+  color: var(--clr-text);
   font-size: 4rem;
   font-weight: 1000;
   padding: 20px;
@@ -143,8 +143,9 @@ small {
   display: flex;
   align-items: center;
   border-radius: 1000px;
-  color: white;
+  color: var(--clr-text);
   font-size: 1.3rem;
   cursor: pointer;
   height: 1.4rem;
+  background-color: var(--clr-text);;
 }
