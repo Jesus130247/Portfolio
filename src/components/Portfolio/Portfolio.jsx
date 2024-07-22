@@ -5,6 +5,7 @@ import styles from './Portfolio.module.css'
 import NavUp from '../navUp/NavUp'
 import NavDown from '../navDown/NavDown'
 
+
 export default function Portfolio({viewProjects,setViewProjects}) {
   const [slide, setSlide] = useState(0)
   const [projects, setProjects] = useState(
@@ -30,19 +31,19 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       //     gitLink:'https://github.com/Jesus130247/Melb-petrol-app',
       //     backgroundColor:'black'
       // },
-      // {
-      //     name:'Leddit',
-      //     image:'/Portfolio/assets/images/leddit.png',
-      //     description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
-      //     users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
-      //     gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
-      //     backgroundColor:'#d4d4d4'
-      // },
+      {
+          name:'Leddit',
+          image:'/Portfolio/src/assets/images/leddit.png',
+          description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
+          users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
+          gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
+          backgroundColor:'#d4d4d4'
+      },
       {
           name:'Tic Tac Terminator', 
           image:'/Portfolio/assets/ticTacToe-CkRANuQ1.png', 
           site:'https://pages.git.generalassemb.ly/leo-git-ga/Project-1/',
-          description:'A fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot.',
+          description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
           backgroundColor:'lightblue'
       },

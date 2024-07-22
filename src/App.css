@@ -138,6 +138,7 @@ body {
 }
 #about div p {
   margin: 0 5%;
+  font-size: 1.15rem;
 }
 #about h2 {
   margin: 30px auto;

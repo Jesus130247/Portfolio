@@ -7,6 +7,7 @@ import leddit from '../../../assets/images/leddit.png'
 
 export default function Project({name, image, description, site, backgroundColor}) {
     const [show, setShow] = useState(false)
+    console.log(leddit)
     return (
     <>
         <div 
