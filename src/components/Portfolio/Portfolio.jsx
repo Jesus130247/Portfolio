@@ -8,6 +8,7 @@ import NavDown from '../navDown/NavDown'
 
 export default function Portfolio({viewProjects,setViewProjects}) {
   const [slide, setSlide] = useState(0)
+  const [navO, setNavO] = useState(0)
   const [projects, setProjects] = useState(
     
   [
@@ -19,7 +20,8 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           It is a one stop shop for all the Rules they could need, as well as intuative UI to allow them to easily construct their army for game day. This website ultizes
           React to easily structure components. I also had to create my own API from data.csv files I got from 'Wahapedia'.`,
           gitLink:'https://github.com/Jesus130247/warhammer_builder',
-          backgroundColor:'#3c3c3c'
+          backgroundColor:'#3c3c3c',
+          directory: '0'
       },
       // {
       //     name:'Petrol station Map',
@@ -37,7 +39,8 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
           gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
-          backgroundColor:'#d4d4d4'
+          backgroundColor:'#d4d4d4',
+          directory: '1'
       },
       {
           name:'Tic Tac Terminator', 
@@ -45,7 +48,8 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           site:'https://pages.git.generalassemb.ly/leo-git-ga/Project-1/',
           description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
-          backgroundColor:'lightblue'
+          backgroundColor:'lightblue',
+          directory: '2'
       },
       {
           name:'Calculator', 
@@ -53,7 +57,8 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           site:'https://jesus130247.github.io/calc_backup/',
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',
-          backgroundColor:'beige'
+          backgroundColor:'beige',
+          directory: '3'
       }
   ])
 
@@ -65,6 +70,11 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       slideNum = (projects.length - 1)
     }
     setSlide(slideNum)
+    setNavO(slideNum)
+  }
+  function handleNav(idx) {
+    setSlide(idx)
+    setNavO(idx)
   }
   return (
     <section id='portfolio'>
@@ -73,6 +83,18 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       <div onClick={() => handleClick(-1)} className={styles.navigate}>{'<'}</div>
       <div className={styles.body}>
         <Header />
+        <div className={styles.directions}>
+          {projects.map((project,idx) => {
+            if (idx === navO) {
+              return (
+                <><span style={{backgroundColor: 'white'}} key={idx} onClick={() => handleNav(idx)}>O</span><span> </span></>
+              )
+            }
+            return (
+              <><span key={idx} onClick={() => handleNav(idx)}>O</span><span> </span></>
+            )
+          })}
+        </div>
         <Dashboard slide={slide} projects={projects}/>
       </div>
       <div onClick={() => handleClick(1)} className={styles.navigate}>{'>'}</div>

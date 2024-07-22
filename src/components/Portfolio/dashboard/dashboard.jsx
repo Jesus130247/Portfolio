@@ -11,6 +11,7 @@ export default function Dashboard({slide, projects}) {
             description={projects[slide].description}
             gitLink={projects[slide].gitLink}
             backgroundColor={projects[slide].backgroundColor}
+            directory={projects[slide].directory}
             />
         </div>
     )

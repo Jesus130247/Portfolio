@@ -109,7 +109,7 @@ small {
   grid-template-columns:1fr 40fr 1fr;
   /* background-color: rgb(22, 20, 43); */
   /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ03R60ebUsOsln9lf7PtF-uda5G-pQuivnA&s'); */
-  height: 70%;
+  height: 80%;
 }
 #root {
   height: 100%;
@@ -131,4 +131,13 @@ small {
 .navigate:hover {
   background-color: rgba(0, 0, 0, 0.692);
   transition: 0.5s;
+}
+
+.directions {
+  text-align: center;
+}
+.directions span {
+  border-radius: 1000px;
+  color: white;
+  cursor: pointer;
 }

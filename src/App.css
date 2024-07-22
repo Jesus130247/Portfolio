@@ -302,6 +302,7 @@ footer {
 
 .navUp img, .navDown img {
   height: 3rem;
+  cursor: pointer;
 }
 .navUp a, .navDown a {
   display: flex;
