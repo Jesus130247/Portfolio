@@ -33,6 +33,7 @@ html {
     border-radius: 18px;
     overflow-y: hidden;
     transition: 0.5s;
+    width: 100%;
 }
 .projects:hover {
   border-radius: 36px;
@@ -40,36 +41,43 @@ html {
 }
 
 .projectDes {
-    color: rgba(255,255,255,1);
-    background: black;
-    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    padding: 10px 1%;
-    width: 98%;
-    line-height: 28px;
-    text-align: justify;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    height: 30px;
-    transition: height .5s;
-    -webkit-transition: height .5s;
-    -moz-transition: height .5s;
+  color: rgba(255,255,255,1);
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px 1.001%;
+  width: 98%;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.projectDes p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+small {
+  opacity: 0;
+  font-size: 0.9rem;
+}
+@media (max-width: 1100px) {
+  .showDescription p {
+    height: 200px;
+  }
 }
 
-small {
-    opacity: 0;
-    font-size: 0.85rem;
-}
 
 .showDescription p {
-    height: 150px;
+  height: 150px;
 }
 
 .showDescription small {
   opacity: 1;
-  padding: 0 0 10px 0;
 }
 
 .site {
@@ -77,9 +85,8 @@ small {
   right: 10px;
   bottom: 10px;
   padding: 5px 10px;
-  border-radius: 15px;
   border: 0px;
-  color: var(--clr-text);
+  color: white;
   cursor: pointer;
 }
 
@@ -89,21 +96,6 @@ small {
 }
 
   
-@media (max-width: 500px) {
-
-  div {
-    margin: 20px 12px 0 12px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  small {
-    font-size: 0.5rem;
-  }
-
-}
-
 .grid {
   display: grid;
   grid-template-columns:1fr 40fr 1fr;
@@ -125,7 +117,7 @@ small {
   cursor: pointer;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.13);
-  border-radius: 15px;
+  border-radius: 18px;
 }
 
 .navigate:hover {
@@ -148,4 +140,5 @@ small {
   cursor: pointer;
   height: 1.4rem;
   background-color: var(--clr-text);;
+
 }

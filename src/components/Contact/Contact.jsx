@@ -77,6 +77,7 @@ const Contact = () => {
         </p> */}
         </div>
         <div className="sectionTwo">
+          <h2>Email</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

@@ -14,7 +14,7 @@ const Navbar = ({setViewProjects, setTheme, theme }) => {
   return (
     <>
     <nav className='navBar'>
-    <div className='initials'>L.M</div>
+    <div className='initials'>L.M.</div>
       <ul>
         <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
         <li><Link to="about" smooth={true} duration={500}>About</Link></li>

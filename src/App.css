@@ -1,5 +1,15 @@
 * {
   transition: 0.1s;
+  caret-color: transparent;
+}
+
+* span, * img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
 }
 
 #dark-mode {
@@ -15,9 +25,8 @@
   --clr-text: black;
   background-color: rgb(236, 236, 236);
   --about-clr: rgba(70, 162, 255, 0.541);
-  --button-clr: rgba(227, 47, 233, 0.575);
+  --button-clr: rgba(255, 0, 0, 0.575);
 }
-
 
 body {
   line-height: 1.6;
@@ -64,6 +73,8 @@ form input,
 form textarea {
   margin: 10px 0;
   padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  caret-color: black;
 }
 
 button {
@@ -155,7 +166,7 @@ button:hover {
 }
 #about div p {
   margin: 0 5%;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 #about h2 {
   margin: 30px auto;
@@ -193,11 +204,12 @@ button:hover {
 }
 .shown li {
   margin: 0 5%;
+  font-size: 1.25rem;
 }
 
 #portfolio {
   /* background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg'); */
-  /* padding: 60px 0 0 0; */
+  padding: 60px 0 0 0;
 }
 
 .contactDiv {
@@ -249,8 +261,14 @@ button:hover {
 .sectionOne p {
   width: 80%;
   padding: 0;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin: 0;
+}
+.sectionTwo h2 {
+  text-align: center;
+  font-size: 1.85rem;
+  margin-top: 0;
+  font-family: "LeagueSpartan";
 }
 .contactDiv .sectionTwo {
   display: flex;

@@ -13,7 +13,7 @@ const Home = () => {
         <div className='content'>
           <p>Hi, I'm</p>
           <h1>Leonardo Manteit</h1>
-          <p>Software Developer</p>
+          <p>Software Engineer</p>
           <br />
           <button><a target='_blank' href='https://www.canva.com/design/DAGLLY4iX2U/z0bplVE7eX9rF8epgkzQFA/view?utm_content=DAGLLY4iX2U&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Check out my Resume</a></button>
         </div>
