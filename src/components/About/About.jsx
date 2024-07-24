@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import NavUp from '../navUp/NavUp';
-import NavDown from '../navDown/NavDown';
 const About = () => {
   const [quals, setQuals] = useState('hidden')
   function handleCick() {
@@ -12,7 +10,6 @@ const About = () => {
   }
   return (
     <section id="about">
-      <NavUp location={'home'}/>
       <div className="about-content">
       <h2>About Me</h2>
       <p>My name is Leonardo Manteit. I am a software engineer specializing in web development. I live in Melbourne, Australia and love to stay active and see friends.</p>
@@ -30,7 +27,6 @@ const About = () => {
         <li>Bachelor Degree in Applied Science (Physics) from RMIT </li>
         <li>Certificate of Completion in Software Engineering from General Assembly (420 hours)</li>
       </p>
-      <NavDown location={'portfolio'}/>
     </section>
   );
 };

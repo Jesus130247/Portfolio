@@ -4,7 +4,6 @@ import locationImg from '../../assets/images/map.png'
 import emailImg from '../../assets/images/gmail.png'
 import linkedIn from '../../assets/images/linkedin.png'
 import github from '../../assets/images/Github.png'
-import NavUp from '../navUp/NavUp';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -39,7 +38,6 @@ const Contact = () => {
 
   return (<>
     <section id="contact">
-      <NavUp location={'portfolio'} />
       <div className="contactDiv">
         <div className="sectionOne">
         <h2>Contact</h2>

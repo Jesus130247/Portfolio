@@ -1,5 +1,4 @@
 import React from 'react';
-import NavDown from '../navDown/NavDown';
 import me from '../../assets/images/me.png'
 // import portfolio from '../../assets/portfolio.pdf'
 const Home = () => {
@@ -18,7 +17,6 @@ const Home = () => {
           <button><a target='_blank' href='https://www.canva.com/design/DAGLLY4iX2U/z0bplVE7eX9rF8epgkzQFA/view?utm_content=DAGLLY4iX2U&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Check out my Resume</a></button>
         </div>
       </div>
-      <NavDown location={'about'}/>
     </section>
   );
 };

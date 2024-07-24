@@ -321,18 +321,29 @@ footer {
 }
 
 .navUp, .navDown {
+  font-family: "LeagueSpartan";
   display: flex;
-  align-self: center;
-  justify-self: center;
-  width: fit-content;
+  position: fixed;
+  /* width: 100%; */
+  right: 5rem;
+  z-index: 1100;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 1000px;
-  background-color: rgb(173, 173, 173);
-  transition: .5s;
+  height: 3rem;
+  background: var(--button-clr);
+  transition: 0.5s;
 }
 
 .navUp:hover, .navDown:hover {
-  background: #6d2f2fb4;
+  background: #6b6b6b;
   transition: .5s;
+}
+.navUp {
+  top: 100px;
+}
+.navDown {
+  top: 10rem;
 }
 
 .navUp img, .navDown img {
@@ -341,4 +352,17 @@ footer {
 }
 .navUp a, .navDown a {
   display: flex;
+}
+
+.hide {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2s;
+}
+.hide img {
+  transition: 0.2s;
+  opacity: 0;
+}
+.hide:hover, .hide img:hover {
+  background: #6b6b6b00;
+  cursor: initial;
 }

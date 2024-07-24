@@ -7,6 +7,7 @@ import './App.css';
 import Portfolio from './components/Portfolio/Portfolio'
 import { useState } from 'react';
 import Footer from './components/footer/footer';
+import NavButtons from './components/NavButtons/NavButtons.jsx'
 import "./index.css"
 
 import { createContext } from 'react';
@@ -24,6 +25,7 @@ function App() {
         <Portfolio viewProjects={viewProjects} setViewProjects={setViewProjects}/>
         <Contact />
         <Footer />
+        <NavButtons />
     </div>
     </ThemeContext.Provider>
   )
