@@ -10,11 +10,25 @@
      -moz-user-select: none; /* Old versions of Firefox */
       -ms-user-select: none; /* Internet Explorer/Edge */
           user-select: none;
+          
+}
+img:active {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+* {
+  scrollbar-width: thin; /* "auto" or "thin" for Firefox; "auto" or "thin" or "none" for other browsers */
+  scrollbar-color: var(--background-color) var(--background-color); /* thumb and track color for Firefox */
 }
 
 #dark-mode {
   --clr-nav: rgba(0, 0, 0, 0.685);
   --clr-text: white;
+  --background-color: rgb(30, 32, 34);
   background-color: rgb(30, 32, 34);
   --about-clr: rgb(46, 56, 66);
   --button-clr: #6d2f2fb4;
@@ -23,6 +37,7 @@
 #light-mode {
   --clr-nav: rgba(131, 47, 233, 0.678);
   --clr-text: black;
+  --background-color: rgb(236, 236, 236);
   background-color: rgb(236, 236, 236);
   --about-clr: rgba(70, 162, 255, 0.541);
   --button-clr: rgba(255, 0, 0, 0.575);
@@ -90,8 +105,18 @@ button {
 button:hover {
   background: #6b6b6b;
   transition: 0.5s;
-
 }
+
+@keyframes buttonActive {
+  0% { background-color: var(--background-color); color: initial;}
+  10% { background-color: white; color: white;}
+  100% { background-color: var(--background-color); color: initial;}
+}
+
+button:active {
+  animation: buttonActive 1s forwards;
+}
+
 
 .navBar {
   font-family: "LeagueSpartan";
@@ -362,7 +387,14 @@ footer {
   transition: 0.2s;
   opacity: 0;
 }
-.hide:hover, .hide img:hover {
+.hide:hover, .hide img:hover, .hide img:active {
   background: #6b6b6b00;
   cursor: initial;
+  transition: 0.2s;
+  border-radius: 1000px;
+}
+.navUp img:active, .navDown img:active {
+  border-radius: 1000px;
+  background-color: #ffffff;
+  transform: translateY(2px);
 }
