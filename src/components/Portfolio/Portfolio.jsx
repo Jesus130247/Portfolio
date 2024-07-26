@@ -12,7 +12,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
   [
       {
           name: 'Prepare for Battle',
-          image: '/Portfolio/assets/warhammer-t5phR8e3.png',
+          image: 'p4b',
           site: 'https://prepare4battle.onrender.com',
           description: `A website designed for the complex table top game; warhammer 40k. This website allows users to quickly, and efficiently 'prepare for battle'.
           It is a one stop shop for all the Rules they could need, as well as intuative UI to allow them to easily construct their army for game day. This website ultizes
@@ -33,7 +33,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       // },
       {
           name:'Leddit',
-          image:'/Portfolio/assets/leddit-CdLjzvu7.png',
+          image:'leddit',
           description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
           gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
@@ -42,7 +42,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       },
       {
           name:'Tic Tac Terminator', 
-          image:'/Portfolio/assets/ticTacToe-CkRANuQ1.png', 
+          image:'tic', 
           site:'https://pages.git.generalassemb.ly/leo-git-ga/Project-1/',
           description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
@@ -51,7 +51,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
       },
       {
           name:'Calculator', 
-          image:'/Portfolio/assets/calc-DAvLp7Th.png', 
+          image:'calc', 
           site:'https://jesus130247.github.io/calc_backup/',
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',
