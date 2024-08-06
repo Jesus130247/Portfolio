@@ -20,7 +20,7 @@ export default function NavDown() {
     useEffect(() => {
         if (scrollPosition > 0 ) {
             setPositionsArray([null, 'about'])
-        } if (scrollPosition >= 960) {
+        } if (scrollPosition >= 100) {
             setPositionsArray(['home', 'portfolio'])
         } if (scrollPosition >= 1920) {
             setPositionsArray(['about', 'contact'])
