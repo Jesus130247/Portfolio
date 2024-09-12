@@ -22,8 +22,7 @@ export default function Project({name, image, description, site, backgroundColor
         onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}
         >
             <p className={styles.projectDes}>{name}<br />
-            <small>{description}</small>{site ? <a target='_blank' className={styles.site} href={site}>Visit Site</a> : null}
-            <small>{description}</small>{gitLink ? <a target='_blank' className={styles.gitLink} href={gitLink}>Visit GitHub</a> : null}</p>
+            <small>{description}</small>{site ? <a target='_blank' className={styles.site} href={site}>Visit Site</a> : null}{gitLink ? <a target='_blank' className={styles.gitLink} href={gitLink}>Visit GitHub</a> : null}</p>
         </div>
     </>
     )
