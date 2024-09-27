@@ -28,7 +28,7 @@ const About = () => {
       </div>
       <button className='button' onClick={handleCick}>My Qualifications</button>
       <p className={quals}>
-        <li>International Baccalaureate from Thorbury high School</li>
+        <li>Baccalaureate from Thorbury high School</li>
         <li>Bachelor Degree in Applied Science (Physics) from RMIT </li>
         <li>Certificate of Completion in Software Engineering from General Assembly (420 hours)</li>
       </p>
