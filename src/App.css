@@ -4,11 +4,11 @@
 }
 
 * span, * img {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
           user-select: none;
           
 }
@@ -21,8 +21,8 @@ img:active {
 }
 
 * {
-  scrollbar-width: thin; /* "auto" or "thin" for Firefox; "auto" or "thin" or "none" for other browsers */
-  scrollbar-color: var(--background-color) var(--background-color); /* thumb and track color for Firefox */
+  scrollbar-width: thin; 
+  scrollbar-color: var(--background-color) var(--background-color); 
 }
 
 #dark-mode {
@@ -401,3 +401,6 @@ footer {
 .downloadIMG {
   height: 1rem;
 }
+
+/* --------phone compatibiltiy ------------ */
+
