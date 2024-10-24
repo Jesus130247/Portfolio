@@ -1,5 +1,15 @@
 @font-face {
     font-family: "LeagueSpartan";
-    src: local("LeagueSpartan"), url('./fonts/LeagueSpartan.otf') format("opentype");
+    src: local("LeagueSpartan"), url('./assets/fonts/LeagueSpartan.otf') format("opentype");
     font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Futura';
+    src: url('./assets/fonts/Futura.otf') format('opentype'); /* Specify the format as OpenType */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

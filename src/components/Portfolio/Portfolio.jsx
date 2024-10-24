@@ -77,9 +77,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
   }
   return (
     <section id='portfolio'>
-    <div className={styles.grid}>
-      <div onClick={() => handleClick(-1)} className={styles.navigate}>{'<'}</div>
-      <div className={styles.body}>
+       <div className={styles.body}>
         <Header />
         <div className={styles.directions}>
           {projects.map((project,idx) => {
@@ -94,9 +92,11 @@ export default function Portfolio({viewProjects,setViewProjects}) {
             }
           })}
         </div>
+      <div className={styles.grid}>
+        <div onClick={() => handleClick(-1)} className={styles.navigate}>&#8592;</div>
         <Dashboard slide={slide} projects={projects}/>
+        <div onClick={() => handleClick(1)} className={styles.navigate}>&#8594;</div>
       </div>
-      <div onClick={() => handleClick(1)} className={styles.navigate}>{'>'}</div>
     </div>
     </section>
   )

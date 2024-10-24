@@ -40,13 +40,13 @@ img:active {
   --background-color: rgb(236, 236, 236);
   background-color: rgb(236, 236, 236);
   --about-clr: rgba(70, 162, 255, 0.541);
-  --button-clr: rgba(255, 0, 0, 0.575);
+  --button-clr: rgb(196, 0, 0);
 }
 
 body {
   line-height: 1.6;
   margin: 0 auto;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Futura';
 }
 
 nav {
@@ -88,14 +88,14 @@ form input,
 form textarea {
   margin: 10px 0;
   padding: 10px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Futura", serif;
   caret-color: black;
 }
 
 button {
   padding: 10px;
   background: var(--button-clr);
-  color: var(--clr-text);
+  color: white;
   border: none;
   cursor: pointer;
   padding: 15px 20px;
@@ -157,7 +157,7 @@ button:active {
 
 .homeDiv .content button a {
   text-decoration: none;
-  color: var(--clr-text);
+  color: white;
 }
 
 .homeDiv h1 {
@@ -397,4 +397,7 @@ footer {
   border-radius: 1000px;
   background-color: #ffffff;
   transform: translateY(2px);
+}
+.downloadIMG {
+  height: 1rem;
 }
