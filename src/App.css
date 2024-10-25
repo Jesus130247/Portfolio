@@ -12,7 +12,6 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
-
 img:active {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -180,11 +179,18 @@ button:active {
   justify-content: center;
 }
 
-.homeDiv img {
+.my_img {
   margin: 0 auto;
   border-radius: 400px;
   height: 500px;
   max-width: 100%; /* Ensure images are responsive */
+}
+
+.buttonImages {
+  height: 3rem; 
+  position:relative; 
+  top: 20px; 
+  margin: 0;
 }
 
 #about {
@@ -288,9 +294,12 @@ button:active {
 .sectionOne p,
 .sectionTwo p {
   width: 80%;
-  padding: 0;
   font-size: 1.25rem;
   margin: 0;
+}
+
+.sectionOne p {
+  padding-left: 10%;
 }
 
 .contactDiv form textarea,
@@ -384,35 +393,149 @@ footer {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) { /* laptop */
+
   .homeDiv h1 {
-    font-size: 3rem; /* Adjusted for smaller screens */
+    font-size: 3rem; 
   }
 
   .homeDiv p {
-    font-size: 1.2rem; /* Adjusted for smaller screens */
+    font-size: 1.2rem; 
   }
 
+  .homeDiv button {
+    font-size: 0.8rem; 
+
+  }
+
+  .my_img {
+    height: 400px;
+  }
+  
+  .buttonImages {
+    height: 2.5rem; 
+  }
+  .homeDiv button {
+    font-size: 0.9rem; 
+    padding: 10px;
+  }
+
+  #about div p, #about .shown li {
+    font-size: 1.1rem ;
+  }
+
+  .contactDiv .sectionOne,
+  .contactDiv .sectionTwo {
+    width: 90%;
+  }
+
+  .contactDiv p, .sectionOne li a {
+    font-size: 1rem;
+  }
+  .sectionOne li {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) { /* phone */
+
+  .navDown img,
+  .navUp img {
+    display: none;
+  }
+  nav a {
+    font-size: 0.6rem;
+  }
   .navBar ul {
-    flex-direction: column; /* Stack items vertically */
-    gap: 5px;
+    gap: 0;
+  }
+  .navBar .initials {
+    font-size: 0.6rem;
+    padding-left: 5px;
+  }
+  .navBar img {
+    height: 1.5rem;
   }
 
-  #about div p {
-    font-size: 1rem; /* Smaller font for mobile */
+  #home {
+    height: 400px;
+  }
+  #about {
+    height: 650px;
+  }
+  #portfolio {
+    height: 500px;
+    
   }
 
+  section {
+    padding: 0;
+  }
+  .homeDiv h1 {
+    font-size: 1rem; 
+  }
+  .homeDiv p {
+    font-size: 0.6rem; 
+  }
+  .buttonImages {
+    height: 1.5rem; 
+    top: 10px;
+  }
+  .homeDiv button {
+    font-size: 0.6rem; 
+    padding: 5px;
+  }
+  .my_img {
+    height: 140px;
+  }
+  
+  #about button {
+    font-size: 0.6rem; 
+    padding: 10px;
+  }
+  #about h2 {
+    font-size: 0.8rem; 
+  }
+  #about div p, #about .shown li {
+    font-size: 0.6rem ;
+  }
+
+  #contact {
+    height: fit-content;
+    margin: 50px 0;
+  }
   .contactDiv {
-    grid-template-columns: 1fr; /* Stack columns for mobile */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
-
-  .contactDiv input,
-  .contactDiv form textarea {
-    width: 90%; /* Use more width on mobile */
+  .contactDiv .sectionOne,
+  .contactDiv .sectionTwo {
+    width: 90%;
+    padding-bottom: 10px;
   }
-
-  button {
-    width: 90%; /* Full width on mobile */
-    margin: 0 auto; /* Center the button */
+  .contactDiv p, .sectionOne li a {
+    font-size: 0.5rem;
   }
+  .sectionOne li {
+    font-size: 0.5rem;
+    width: 150px;
+    list-style: none;
+  }
+  .contactDiv form textarea, .contactDiv form input {
+    width: 70%;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 0.5rem;
+}
+.contactDiv button {
+  padding: 10px;
+  margin: 0;
+  font-size: 0.5rem;
+}
+#contact h2 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
 }

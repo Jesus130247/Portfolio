@@ -22,13 +22,12 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           directory: '0'
       },
       {
-          name:'Petrol station Map',
+          name:'Petrol Down-Under',
           image:'PDU',
           site: 'https://melb-petrol-app.onrender.com',
           description:`A website that allows users to check the locations of every petrol station in Australia. It utilizes the google maps API, restricting the amount of 
           petrol stations that show to be only the ones on the users screen. This allows for faster performance. It also has features such as; searching by postcode, 
-          searching for a specific location, and a random petrol station spotlight. This website could be best used by people roadtripping around australia, and wanting to 
-          make sure they wont be left without petrol in the middle of the outback.`,
+          searching for a specific location, and a random petrol station spotlight.`,
           gitLink:'https://github.com/Jesus130247/Melb-petrol-app',
           backgroundColor:'#faf0e6'
       },

@@ -63,12 +63,6 @@ small {
   opacity: 0;
   font-size: 0.9rem;
 }
-@media (max-width: 1100px) {
-  .showDescription p {
-    height: 200px;
-  }
-}
-
 
 .showDescription p {
   height: fit-content;
@@ -148,4 +142,48 @@ small {
   height: 1.4rem;
   background-color: var(--clr-text);;
 
+}
+
+@media (max-width: 1024px) {
+  .navigate {
+    padding: 10px;
+  }
+
+  .grid {
+    gap: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .navigate {
+    padding: 0;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  small {
+    font-size: 0.6rem;
+  }
+
+  .projectDes {
+    padding-bottom: 20px;
+  }
+  .showDescription p {
+    height: fit-content;
+  }
+  .directions {
+    margin: 10px 0;
+  }
+  .projects {
+    margin: 0;
+  }
+  .projects:hover {
+    border-radius: 10px;
+  }
+  .gitLink, .site {
+    padding: 0;
+    bottom: 0;
+  }
+  
 }

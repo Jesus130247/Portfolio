@@ -47,7 +47,7 @@ const Contact = () => {
       <p>
         <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'><img src={locationImg} alt="location pin" /> Melbourne, AUS</a></li>
         <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'><img src={emailImg} alt="email logo" /> Leonardo.monty@hotmail.com</a></li>
-        <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img src={linkedIn} alt="linkedIn" /> LinkedIn/LeonardoManteit</a></li>
+        <li><a target='_blank' href='https://www.linkedin.com/in/leonardo-manteit-8882a629a'><img src={linkedIn} alt="linkedIn" /> Linkedin</a></li>
         <li><a target='_blank' href='https://github.com/Jesus130247'><img src={github} alt="github" /> github/Jesus130247</a></li>
       </p>
         {/* <p>
