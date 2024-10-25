@@ -29,7 +29,19 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           petrol stations that show to be only the ones on the users screen. This allows for faster performance. It also has features such as; searching by postcode, 
           searching for a specific location, and a random petrol station spotlight.`,
           gitLink:'https://github.com/Jesus130247/Melb-petrol-app',
-          backgroundColor:'#faf0e6'
+          backgroundColor:'#faf0e6',
+          directory: '1'
+      },
+      {
+        name:'DeepNotes', 
+        image:'DeepNotes', 
+        site:'https://jesus130247.github.io/Electron-Transcription/',
+        description:`An audio transcription and summarization tool for managing spoken content.
+        Technologies: Electron, React, PostgreSQL, TypeScript, DeepGram, OpenAI
+        Features: Transcribes audio input and provides concise summaries. Available as a desktop app or web application.`,
+        gitLink:'https://github.com/Jesus130247/Electron-Transcription',
+        backgroundColor:'#0c33b688',
+        directory: '2'
       },
       {
           name:'Leddit',
@@ -38,7 +50,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
           gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
           backgroundColor:'#d4d4d4',
-          directory: '1'
+          directory: '3'
       },
       {
           name:'Tic Tac Terminator', 
@@ -47,7 +59,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
           backgroundColor:'lightblue',
-          directory: '2'
+          directory: '4'
       },
       {
           name:'Calculator', 
@@ -56,7 +68,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',
           backgroundColor:'beige',
-          directory: '3'
+          directory: '5'
       }
   ])
 

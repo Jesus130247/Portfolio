@@ -43,6 +43,10 @@ img:active {
   --button-clr: rgb(196, 0, 0);
 }
 
+html {
+  background-color: var(--background-color);
+}
+
 body {
   line-height: 1.6;
   margin: 0 auto;

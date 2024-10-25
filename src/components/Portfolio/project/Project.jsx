@@ -5,6 +5,7 @@ import calc from '../../../assets/images/calc.png'
 import tic from '../../../assets/images/ticTacToe.png'
 import leddit from '../../../assets/images/leddit.png'
 import PDU from '../../../assets/images/PDU.png'
+import DeepNotes from '../../../assets/images/DeepNotes.jpeg'
 
 export default function Project({name, image, description, site, backgroundColor, gitLink}) {
     const [show, setShow] = useState(false)
@@ -13,7 +14,8 @@ export default function Project({name, image, description, site, backgroundColor
         'calc': calc,
         'tic': tic,
         'leddit': leddit,
-        'PDU': PDU
+        'PDU': PDU,
+        'DeepNotes': DeepNotes
     }
     return (
     <>

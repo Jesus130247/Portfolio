@@ -4,6 +4,7 @@ import locationImg from '../../assets/images/map.png'
 import emailImg from '../../assets/images/gmail.png'
 import linkedIn from '../../assets/images/linkedin.png'
 import github from '../../assets/images/Github.png'
+import TimeZone from '../TimeZone/TimeZone';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -41,9 +42,10 @@ const Contact = () => {
       <div className="contactDiv">
         <div className="sectionOne">
         <h2>Contact</h2>
+        <TimeZone />
+        <br />
         <p>If you'd like to work together or just want to say hello, feel free to contact me via my social media handles below. You can also email me using the form to the right.</p>
         <br /><p>I will always do my best to respond within the hour</p>
-        <br />
       <p>
         <li><a target='_blank' href='https://www.google.com.au/maps/@-37.8602828,145.079616,10z'><img src={locationImg} alt="location pin" /> Melbourne, AUS</a></li>
         <li><a target='_blank' href='mailto:leonardo.monty@hotmail.com'><img src={emailImg} alt="email logo" /> Leonardo.monty@hotmail.com</a></li>
