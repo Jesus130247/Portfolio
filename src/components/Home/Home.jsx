@@ -18,8 +18,8 @@ const Home = () => {
           <p>Software Engineer</p>
           <img src={preview} className='buttonImages'/>
           <button><a target='_blank' href='https://www.canva.com/design/DAGUb3-MIPg/CledkuW39sj-8ZWgAd8W3A/view?utm_content=DAGUb3-MIPg&utm_campaign=designshare&utm_medium=link&utm_source=editor'>Preview my Resume</a></button>
-          &nbsp;&nbsp;&nbsp;
-          <img src={downloadSymbol} className='buttonImages'/>
+          <br />
+          <img src={downloadSymbol} className='buttonImages'/>&nbsp;
           <a href={resume} download><button style={{backgroundColor: '#ff4141', color:'white'}}> Download Resume</button></a>
         </div>
       </div>
