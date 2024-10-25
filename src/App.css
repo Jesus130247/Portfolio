@@ -3,15 +3,16 @@
   caret-color: transparent;
 }
 
-* span, * img {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-   -khtml-user-select: none; 
-     -moz-user-select: none; 
-      -ms-user-select: none; 
-          user-select: none;
-          
+* span,
+* img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
+
 img:active {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -21,8 +22,8 @@ img:active {
 }
 
 * {
-  scrollbar-width: thin; 
-  scrollbar-color: var(--background-color) var(--background-color); 
+  scrollbar-width: thin; /* "auto" or "thin" for Firefox */
+  scrollbar-color: var(--background-color) var(--background-color); /* thumb and track color for Firefox */
 }
 
 #dark-mode {
@@ -46,7 +47,7 @@ img:active {
 body {
   line-height: 1.6;
   margin: 0 auto;
-  font-family: 'Futura';
+  font-family: 'Futura', sans-serif; /* Use sans-serif for better web compatibility */
 }
 
 nav {
@@ -75,7 +76,6 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-  /* border: 1px solid #ccc; */
   height: 60em;
 }
 
@@ -93,12 +93,11 @@ form textarea {
 }
 
 button {
-  padding: 10px;
+  padding: 15px 20px;
   background: var(--button-clr);
   color: white;
   border: none;
   cursor: pointer;
-  padding: 15px 20px;
   font-family: "LeagueSpartan";
   border-radius: 5px;
 }
@@ -117,7 +116,6 @@ button:active {
   animation: buttonActive 1s forwards;
 }
 
-
 .navBar {
   font-family: "LeagueSpartan";
   display: flex;
@@ -131,26 +129,30 @@ button:active {
   justify-content: space-between;
   padding: 10px 0;
 }
+
 .navBar ul {
   display: flex;
   gap: 10px;
   font-size: 1.15rem;
 }
+
 .navBar .initials {
   padding-left: 10px;
 }
+
 .navBar .systemChange {
   padding-right: 10px;
   cursor: pointer;
 }
+
 .navBar img {
   margin-top: 10%;
   height: 3rem;
 }
+
 .homeDiv {
   display: grid;
   color: var(--clr-text);
-  /* background-image: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg'); */
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
@@ -165,42 +167,47 @@ button:active {
   font-size: 5rem;
   font-family: "LeagueSpartan";
 }
+
 .homeDiv p {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
 }
+
 .homeDiv #image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .homeDiv img {
   margin: 0 auto;
   border-radius: 400px;
   height: 500px;
-  max-width: 500px;
+  max-width: 100%; /* Ensure images are responsive */
 }
 
 #about {
   display: flex;
   color: var(--clr-text);
   align-items: center;
-  /* background-position: center; */
-  /* background-image: url('https://images8.alphacoders.com/134/1347727.png'); */
 }
+
 #about div p {
   margin: 0 5%;
   font-size: 1.25rem;
 }
+
 #about h2 {
   margin: 30px auto;
   text-align: center;
   font-family: "LeagueSpartan";
 }
+
 #about button {
   margin: 30px auto;
 }
+
 .about-content {
   background-color: var(--about-clr);
   border-radius: 25px;
@@ -208,6 +215,7 @@ button:active {
   padding-bottom: 30px;
   margin-top: 16px;
 }
+
 .hidden {
   visibility: hidden;
   background-color: rgba(38, 44, 51, 0);
@@ -218,6 +226,7 @@ button:active {
   border-radius: 50px;
   list-style: none;
 }
+
 .shown {
   visibility: visible;
   background-color: var(--about-clr);
@@ -227,13 +236,13 @@ button:active {
   width: 80%;
   transition: 0.5s;
 }
+
 .shown li {
   margin: 0 5%;
   font-size: 1.25rem;
 }
 
 #portfolio {
-  /* background-image: url('https://i.pinimg.com/originals/e7/55/df/e755df7d91a88d1c8f1fd3fb4655ab2e.jpg'); */
   padding: 60px 0 0 0;
 }
 
@@ -242,23 +251,18 @@ button:active {
   height: 60%;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  /* background-image: url('https://manybackgrounds.com/images/hd/dark-blue-line-reflections-xelvgfi72gzuatet.jpg'); */
   color: var(--clr-text);
 }
 
-
 .contactDiv input {
-  width: 30rem;
+  width: 30rem; /* Use max-width for better responsiveness */
 }
-.contactDiv .sectionOne {
+
+.contactDiv .sectionOne,
+.contactDiv .sectionTwo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.contactDiv .sectionOne {
-  display: flex;
   background-color: var(--about-clr);
   border-radius: 25px;
   width: 80%;
@@ -266,66 +270,46 @@ button:active {
   justify-self: center;
   align-self: center;
 }
+
 .sectionOne img {
   position: relative;
   top: 0.5rem;
   height: 2rem;
 }
 
-.sectionOne h2 {
-  text-align: center;
-  font-size: 1.85rem;
-  margin-top: 0;
-  font-family: "LeagueSpartan";
-}
-.sectionOne p {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.sectionOne p {
-  width: 80%;
-  padding: 0;
-  font-size: 1.25rem;
-  margin: 0;
-}
+.sectionOne h2,
 .sectionTwo h2 {
   text-align: center;
   font-size: 1.85rem;
   margin-top: 0;
   font-family: "LeagueSpartan";
 }
-.contactDiv .sectionTwo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
-  background-color: var(--about-clr);
-  border-radius: 25px;
+
+.sectionOne p,
+.sectionTwo p {
   width: 80%;
-  height: 100%;
-  justify-self: center;
-  align-self: center;
+  padding: 0;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
-.contactDiv form textarea {
-  align-self: center;
-  width: 70%;
-  border-radius: 25px;
-  height: 4rem;
-  padding: 15px 20px;
-}
+.contactDiv form textarea,
 .contactDiv form input {
   align-self: center;
   width: 70%;
   border-radius: 25px;
   padding: 15px 20px;
 }
+
+.contactDiv form textarea {
+  height: 4rem;
+}
+
 .contactDiv form button {
   align-self: end;
   margin-right: 12%;
 }
+
 .contactDiv a {
   text-decoration: none;
   color: var(--clr-text);
@@ -341,15 +325,14 @@ footer {
   align-items: center;
   color: var(--clr-text);
   background-color: var(--clr-nav);
-  display: flex;
   padding: 0.5rem 0;
 }
 
-.navUp, .navDown {
+.navUp,
+.navDown {
   font-family: "LeagueSpartan";
   display: flex;
   position: fixed;
-  /* width: 100%; */
   right: 5rem;
   z-index: 1100;
   align-items: center;
@@ -360,22 +343,28 @@ footer {
   transition: 0.5s;
 }
 
-.navUp:hover, .navDown:hover {
+.navUp:hover,
+.navDown:hover {
   background: #6b6b6b;
-  transition: .5s;
+  transition: 0.5s;
 }
+
 .navUp {
   top: 100px;
 }
+
 .navDown {
   top: 10rem;
 }
 
-.navUp img, .navDown img {
+.navUp img,
+.navDown img {
   height: 3rem;
   cursor: pointer;
 }
-.navUp a, .navDown a {
+
+.navUp a,
+.navDown a {
   display: flex;
 }
 
@@ -383,24 +372,47 @@ footer {
   background: rgba(0, 0, 0, 0);
   transition: 0.2s;
 }
+
 .hide img {
   transition: 0.2s;
   opacity: 0;
 }
-.hide:hover, .hide img:hover, .hide img:active {
-  background: #6b6b6b00;
-  cursor: initial;
-  transition: 0.2s;
-  border-radius: 1000px;
-}
-.navUp img:active, .navDown img:active {
-  border-radius: 1000px;
-  background-color: #ffffff;
-  transform: translateY(2px);
-}
-.downloadIMG {
-  height: 1rem;
+
+.hide:hover,
+.hide img:hover,
+.hide img:active {
+  opacity: 1;
 }
 
-/* --------phone compatibiltiy ------------ */
+@media (max-width: 768px) {
+  .homeDiv h1 {
+    font-size: 3rem; /* Adjusted for smaller screens */
+  }
 
+  .homeDiv p {
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+  }
+
+  .navBar ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 5px;
+  }
+
+  #about div p {
+    font-size: 1rem; /* Smaller font for mobile */
+  }
+
+  .contactDiv {
+    grid-template-columns: 1fr; /* Stack columns for mobile */
+  }
+
+  .contactDiv input,
+  .contactDiv form textarea {
+    width: 90%; /* Use more width on mobile */
+  }
+
+  button {
+    width: 90%; /* Full width on mobile */
+    margin: 0 auto; /* Center the button */
+  }
+}
