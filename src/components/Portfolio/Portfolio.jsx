@@ -48,7 +48,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           image:'leddit',
           description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
-          gitLink:'https://git.generalassemb.ly/leo-git-ga/project-2',
+          gitLink:'https://github.com/Jesus130247/Project2-CRUD/blob/main/views/layout.ejs',
           backgroundColor:'#d4d4d4',
           directory: '3'
       },
