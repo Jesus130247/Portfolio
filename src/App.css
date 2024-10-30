@@ -464,14 +464,15 @@ footer {
   }
 
   #home {
-    height: 400px;
+    padding-top: 100px;
+    height: 200px;
   }
   #about {
     height: 650px;
   }
   #portfolio {
-    height: 500px;
-    
+    height: 600px;
+    padding: 0 0 60px 0;
   }
 
   section {

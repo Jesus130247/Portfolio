@@ -159,13 +159,12 @@ small {
     font-size: 2rem;
     border-radius: 15px;
   }
-
   .grid {
     gap: 10px;
   }
 
   small {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
   .projectDes {
