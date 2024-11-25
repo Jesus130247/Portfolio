@@ -24,18 +24,19 @@ const Contact = () => {
     .then((response) => {
       console.log('Message sent successfully!', response.status, response.text);
       setStatus('Message sent successfully!');
+      alert(status);
       // Clear the form
       setName('');
       setEmail('');
       setMessage('');
-      setSendMessage(false);
     })
     .catch((err) => {
       console.error('Failed to send message:', err);
       setStatus('Failed to send message. Please try again later.');
+      alert(status);
     });
-    alert(status);
   };
+
 
   return (<>
     <section id="contact">
