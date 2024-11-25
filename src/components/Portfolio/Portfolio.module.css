@@ -172,6 +172,7 @@ small {
   }
   .showDescription p {
     height: fit-content;
+    max-height: 90%;
   }
   .directions {
     margin: 10px 0;
