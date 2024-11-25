@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import styles from '../Portfolio.module.css'
-import warhammer from '../../../assets/images/p4b1.png'
+import warhammer from '../../../assets/images/warhammer.png'
 import calc from '../../../assets/images/calc.png'
 import tic from '../../../assets/images/ticTacToe.png'
 import leddit from '../../../assets/images/leddit.png'
 import PDU from '../../../assets/images/PDU.png'
 import DeepNotes from '../../../assets/images/DeepNotes.jpeg'
+import chiroSeminars from '../../../assets/images/chiroSeminars.png'
 
 export default function Project({name, image, description, site, backgroundColor, gitLink}) {
     const [show, setShow] = useState(false)
     const lib = {
+        'chiroSeminars': chiroSeminars,
         'p4b': warhammer,
         'calc': calc,
         'tic': tic,

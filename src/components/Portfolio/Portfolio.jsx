@@ -11,6 +11,19 @@ export default function Portfolio({viewProjects,setViewProjects}) {
     
   [
       {
+        name:'ChiroOceaniaHub', 
+        image:'chiroSeminars', 
+        site:'https://chiroseminarhub-australia.onrender.com/',
+        description:`ChiroSeminars is a comprehensive platform designed to connect individuals through interactive seminars, fostering learning and growth 
+        in diverse fields. The application provides dynamic features such as expert-led sessions, collaborative learning environments, and access to extensive 
+        seminar resources. Built with a robust tech stack, including React.js, Node.js, PostgreSQL, and FullCalendar, it leverages modern tools like Google Pay,
+        SendGrid, and framer-motion to enhance user experience. With a focus on innovation and usability, ChiroSeminars exemplifies cutting-edge development while 
+        addressing the unique needs of seminar participants.` ,
+        gitLink:'https://github.com/Jesus130247/ChiroSeminars',
+        backgroundColor:'beige',
+        directory: '0'
+      },  
+      {
           name: 'Prepare for Battle',
           image: 'p4b',
           site: 'https://prepare4battle.onrender.com',
@@ -18,8 +31,8 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           It is a one stop shop for all the Rules they could need, as well as intuative UI to allow them to easily construct their army for game day. This website ultizes
           React to easily structure components. I also had to create my own API from data.csv files I got from 'Wahapedia'.`,
           gitLink:'https://github.com/Jesus130247/warhammer_builder',
-          backgroundColor:'#3c3c3c',
-          directory: '0'
+          backgroundColor:'#121212',
+          directory: '1'
       },
       {
           name:'Petrol Down-Under',
@@ -30,7 +43,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           searching for a specific location, and a random petrol station spotlight.`,
           gitLink:'https://github.com/Jesus130247/Melb-petrol-app',
           backgroundColor:'#faf0e6',
-          directory: '1'
+          directory: '2'
       },
       {
         name:'DeepNotes', 
@@ -41,7 +54,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
         Features: Transcribes audio input and provides concise summaries. Available as a desktop app or web application.`,
         gitLink:'https://github.com/Jesus130247/Electron-Transcription',
         backgroundColor:'#0c33b688',
-        directory: '2'
+        directory: '3'
       },
       {
           name:'Leddit',
@@ -50,7 +63,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
           gitLink:'https://github.com/Jesus130247/Project2-CRUD/blob/main/views/layout.ejs',
           backgroundColor:'#d4d4d4',
-          directory: '3'
+          directory: '4'
       },
       {
           name:'Tic Tac Terminator', 
@@ -59,7 +72,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
           backgroundColor:'lightblue',
-          directory: '4'
+          directory: '5'
       },
       {
           name:'Calculator', 
@@ -68,7 +81,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',
           backgroundColor:'beige',
-          directory: '5'
+          directory: '6'
       }
   ])
 
