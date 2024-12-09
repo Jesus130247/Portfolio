@@ -57,13 +57,23 @@ export default function Portfolio({viewProjects,setViewProjects}) {
         directory: '3'
       },
       {
+        name:'Ultimate Task Manager', 
+        image:'UTM', 
+        site:'task-manager-app-lapis.onrender.com',
+        description:`The Ultimate Task Manager is an app designed to help users efficiently manage their tasks and stay productive. 
+        It offers a simple, intuitive interface to organize tasks and track their progress with ease.`,
+        gitLink:'https://github.com/Jesus130247/Task-Manager-App-Lapis',
+        backgroundColor:'beige',
+        directory: '4'
+      },
+      {
           name:'Leddit',
           image:'leddit',
           description:`Leo's take on the popular site, reddit. Designed to allow users to share and talk about any subject they're interested. Once logged in,
           users can search for (or create) servers, post, comment, upvote and share with the community. This site was built with NodeJs, PSQL, HTML and JavaScript.`,
           gitLink:'https://github.com/Jesus130247/Project2-CRUD/blob/main/views/layout.ejs',
           backgroundColor:'#d4d4d4',
-          directory: '4'
+          directory: '5'
       },
       {
           name:'Tic Tac Terminator', 
@@ -72,7 +82,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is a fun game of knots and crosses. It allows a user to play against their friend... or take on the terminator bot. This was project was created with JavaScript, and styles with CSS. The simplicity of the disign was intended to match the the game, to give the user a relaxed feeling.',
           gitLink:'https://git.generalassemb.ly/leo-git-ga/Project-1',
           backgroundColor:'lightblue',
-          directory: '5'
+          directory: '6'
       },
       {
           name:'Calculator', 
@@ -81,7 +91,7 @@ export default function Portfolio({viewProjects,setViewProjects}) {
           description:'This is the first app that I created. It is a simple calculator put together with HTML and JavaScript, and then styled with CSS' ,
           gitLink:'https://github.com/Jesus130247/calc_backup',
           backgroundColor:'beige',
-          directory: '6'
+          directory: '7'
       }
   ])
 

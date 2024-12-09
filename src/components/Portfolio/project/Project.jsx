@@ -6,6 +6,7 @@ import tic from '../../../assets/images/ticTacToe.png'
 import leddit from '../../../assets/images/leddit.png'
 import PDU from '../../../assets/images/PDU.png'
 import DeepNotes from '../../../assets/images/DeepNotes.jpeg'
+import UTM from '../../../assets/images/UTM.jpg'
 import chiroSeminars from '../../../assets/images/chiroSeminars.png'
 
 export default function Project({name, image, description, site, backgroundColor, gitLink}) {
@@ -17,7 +18,8 @@ export default function Project({name, image, description, site, backgroundColor
         'tic': tic,
         'leddit': leddit,
         'PDU': PDU,
-        'DeepNotes': DeepNotes
+        'DeepNotes': DeepNotes,
+        'UTM': UTM
     }
     return (
     <>
